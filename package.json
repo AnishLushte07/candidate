@@ -122,12 +122,8 @@
     "npm": "^3.9.5"
   },
   "scripts": {
-    "test": "gulp test",
-    "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
-    "lint": "gulp lint:scripts:server",
     "clear-db": "sequelize db:drop; sequelize db:create",
     "migrate": "DEBUG=s.* sequelize db:migrate;",
-    "lambda-migrate": "cd lambda && DEBUG=s.* sequelize db:migrate;",
     "start": "nodemon server/app.js"
   },
   "private": true
